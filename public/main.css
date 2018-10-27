@@ -1,0 +1,27 @@
+nav h1{
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 60px;
+    color:white;
+}
+.loading-text{
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 45px;
+    color:orangered;
+}
+.analyzing{
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 45px;
+    color:orangered;
+    width:100%;
+    display: none;
+}
+.result{
+    display: none;
+    font-size:36px;
+}
+.result span{
+    color:green;
+    border:0.5px solid green;
+    background-color: black;
+    margin:1px;
+}

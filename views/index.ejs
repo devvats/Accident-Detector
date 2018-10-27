@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="loader.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <nav class="nav1">
+        <h1>Accident Detector</h1>
+    </nav>
+
+    <form action="/uploads" method="POST" enctype="multipart/form-data">
+        <div class="input-group container my-5 ">
+                <input  name='myFile' type='file' class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">Upload</button>
+            </span>
+        </div>
+        </form>
+        <video class="video-container " width="500px" style="display: block; float: none; margin-left: 35%" controls>
+            <source src="<%= typeof vid != 'undefined' ? vid: '' %>" type="video/mp4">
+        </video>
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+        <div class="loading-text" style="display: none">
+            Analyzing frames...
+        </div>
+
+    <div class="video-div">
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=0 ': '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=1 ': '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=2' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=3' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=4' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=5' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=6' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=7' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=8' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=9' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=10' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=11' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=12' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=13' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=14' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=15' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=16' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=17' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=19' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=20' : '' %>" type="video/mp4">
+    </video>
+    <video class="video-container" width="10%">
+        <source src="<%= typeof vid != 'undefined' ? vid+ '#t=25' : '' %>" type="video/mp4">
+    </video>
+    <div class="analyzing" >
+        Analyzing Video...
+    </div>
+    <div class="result">
+        <span>PASS</span> Accident detected
+    </div>
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script>
+    var videos = document.querySelectorAll("video");
+    var loader = document.querySelector(".sk-folding-cube");
+    var loadingText = document.querySelector(".loading-text");
+    var analyzing = document.querySelector(".analyzing");
+    var result=document.querySelector(".result");
+    var i  =1;
+    function a(){
+        loadingText.style.display = "inherit";
+        videos[i].style.display = "inherit";
+        i++;
+        if(i===21){
+            clearInterval(f);
+            loader.style.display = "none";
+            loadingText.style.display = "none";
+            analyzing.style.display = "block";
+            setInterval(()=>{
+                analyzing.style.display = "none"; 
+                result.style.display="inherit";
+            },1000);
+        }
+    }
+    if(window.location.href === "http://localhost:8080/uploads"){
+        // analyzing.style.display = "block";
+    var f = setInterval(a, 500);
+    }
+    
+    else{
+        loader.style.display = "none";
+            loadingText.style.display = "none";
+            // analyzing.style.display = "none";
+    }
+    
+</script>
+</html>
+
